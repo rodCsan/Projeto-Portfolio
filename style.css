@@ -1,0 +1,180 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+}
+
+body{   
+   /* background: linear-gradient( 90deg, #043543,#023f50,#03596e);  */
+    background: url('img/fundo-geometrico-azul.webp') no-repeat center center fixed;
+    background-size: cover;    
+    font-family: 'Poppins', sans-serif;
+    color: black;
+        
+
+}
+
+header{
+    display: flex;
+    justify-content: space-around;   
+    align-items: center;
+    box-shadow: 1px 1px 10px 1px rgb(2, 17, 51); 
+    margin-bottom: 45px;
+}
+
+header div img{
+    width: 100px;    
+    border-radius: 8%;
+    margin-top: 10px;
+}
+
+header ul{
+    display: flex;        
+}
+
+header ul li{
+    padding: 5px;    
+}
+
+ul{
+    list-style: none;
+}
+
+ul img{
+    width: 60px;  
+}
+
+a{
+    text-decoration: none;
+}
+
+.container { 
+    text-align: center;
+}
+
+.container  h1{
+    font-size: 60px;  
+      
+}
+
+.container h5 {
+    font-size: 30px;
+}
+
+#arrow{
+    font-size: 40px;
+    cursor: pointer;
+    animation: blink 3s steps(5,start) infinite;
+    color: black;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }    
+}
+
+#animation{
+    transition: 500ms;
+}
+
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active{
+    display: block !important;
+}
+
+#about p{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form{
+    width: 40%;  
+    margin: 0 auto;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+.form input{
+    width: 50%;
+    padding: 5px 10px;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid black;
+}
+
+.form button{
+    width: 20%; 
+    padding: 5px 10px; 
+    background: linear-gradient( 90deg, #7AD5FA,#B6E7FD,#D5F2FF);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid black;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 500ms ease-out;
+    margin-top: 20px;
+    margin-left: -4px;
+}
+
+.form button:hover{
+    background-position:left bottom;
+    color: white;    
+}
+
+@media only screen and (max-width: 768px){
+    .container h1{
+        font-size: 40px;
+    }
+
+    .container h5{
+        font-size: 20px;
+    }
+
+    .form{
+        width: 100%;
+    }
+    header div img{
+        width: 80px;
+        margin-top: 10px;
+    }
+
+    ul img{
+        width: 35px;
+    }
+    #about p{
+        max-width: 80%;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container h1{
+        font-size: 30px;
+    }
+    .container h5{
+        font-size: 15px;
+    }
+
+    header div img{
+        width: 60px;
+        margin-top: 5px;
+    }
+
+    ul img{
+        width: 35px;
+    }
+
+    #about p{
+        max-width: 80%;
+        text-align: justify;
+    }
+
+}
+
